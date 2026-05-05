@@ -16,8 +16,7 @@ public class Semana7 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Empleado e1 = new Empleado(/*324.4, "DNI", "23123456", "Luis", "Gutierrez", "Paredes"*/);
-        
-        e1.setApellidom("Fulano");
+        Empleado e1 = new Empleado(324.4, "DNI", "23123456", "Luis", "Gutierrez", "Paredes");
+        e1.verDatos();
     }
 }

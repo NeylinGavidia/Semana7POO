@@ -15,6 +15,9 @@ public class Empleado extends Persona {
     public Empleado(double salario, String tipodocumento, String nrodocumento, String nombre, String apellidop, String apellidom) {
         super(tipodocumento, nrodocumento, nombre, apellidop, apellidom);
         this.salario = salario;
+    }    
+
+    public Empleado() { //sin este no puede agregar sin getters ni setters. Y esto tambien debe existir en la clase padre
     }
 
     public double getSalario() {
@@ -28,7 +31,7 @@ public class Empleado extends Persona {
     @Override
     public void verDatos() {
         System.out.println("Salario: "+this.salario+"| Tipo documento: " + this.tipodocumento+"| Nro documento: "+this.nrodocumento+
-                "| Nombre"+this.nombre+ "| Apellido paterno: "+this.apellidop+ "| Apellido materno: "+this.apellidom);
+                "| Nombre: "+this.nombre+ "| Apellido paterno: "+this.apellidop+ "| Apellido materno: "+this.apellidom);
     }
     
     
