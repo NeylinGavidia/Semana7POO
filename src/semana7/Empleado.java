@@ -17,8 +17,8 @@ public class Empleado extends Persona {
         this.salario = salario;
     }    
 
-    public Empleado() { //sin este no puede agregar sin getters ni setters. Y esto tambien debe existir en la clase padre
-    }
+//    public Empleado() { //sin este no puede agregar sin getters ni setters. Y esto tambien debe existir en la clase padre
+//    }
 
     public double getSalario() {
         return salario;

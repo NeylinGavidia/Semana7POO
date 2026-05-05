@@ -24,9 +24,9 @@ public class Persona {
         this.apellidom = apellidom;
     }
 
-    public Persona() {
-    }
-    
+//    public Persona() {
+//    }
+//    
 
     public String getTipodocumento() {
         return tipodocumento;
