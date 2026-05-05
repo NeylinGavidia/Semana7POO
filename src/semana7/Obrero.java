@@ -8,12 +8,13 @@ package semana7;
  *
  * @author UCC20411
  */
-public class Empleado extends Persona {
+public class Obrero extends Persona{
     
-    private int salario;
+    private int jornal;
 
-    public Empleado(int salario, int edad, String nombre) {
+    public Obrero(int jornal, int edad, String nombre) {
         super(edad, nombre);
-        this.salario = salario;
+        this.jornal = jornal;
     }
+
 }
