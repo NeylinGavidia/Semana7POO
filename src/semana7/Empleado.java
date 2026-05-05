@@ -10,10 +10,26 @@ package semana7;
  */
 public class Empleado extends Persona {
     
-    private int salario;
+    private double salario;
 
-    public Empleado(int salario, int edad, String nombre) {
-        super(edad, nombre);
+    public Empleado(double salario, String tipodocumento, String nrodocumento, String nombre, String apellidop, String apellidom) {
+        super(tipodocumento, nrodocumento, nombre, apellidop, apellidom);
         this.salario = salario;
     }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    @Override
+    public void verDatos() {
+        System.out.println("Salario: "+this.salario+"| Tipo documento: " + this.tipodocumento+"| Nro documento: "+this.nrodocumento+
+                "| Nombre"+this.nombre+ "| Apellido paterno: "+this.apellidop+ "| Apellido materno: "+this.apellidom);
+    }
+    
+    
 }

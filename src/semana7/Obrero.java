@@ -10,11 +10,18 @@ package semana7;
  */
 public class Obrero extends Persona{
     
-    private int jornal;
+    private double jornal;
 
-    public Obrero(int jornal, int edad, String nombre) {
-        super(edad, nombre);
+    public Obrero(double jornal, String tipodocumento, String nrodocumento, String nombre, String apellidop, String apellidom) {
+        super(tipodocumento, nrodocumento, nombre, apellidop, apellidom);
         this.jornal = jornal;
     }
 
+    public double getJornal() {
+        return jornal;
+    }
+
+    public void setJornal(double jornal) {
+        this.jornal = jornal;
+    }
 }
