@@ -17,10 +17,9 @@ public class Semana7 {
         // TODO code application logic here
         
         Empleado e1 = new Empleado(324.4, "DNI", "23123456", "Luis", "Gutierrez", "Paredes");
+        Obrero o1 = new Obrero(110.3, "DNI", "23123456", "Luis", "Gutierrez", "Paredes");
         //se puede agregar e1.setApellidom para quitar los parametros predeterminados que esta en la linea de arriba
         e1.verDatos();
-        
-        Obrero o1 = new Obrero(125, "CE", "723123456", "Lalo", "Gomez", "Pilares");
         o1.verDatos();
     }
 }
