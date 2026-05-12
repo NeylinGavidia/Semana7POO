@@ -38,6 +38,11 @@ public class Obrero extends Persona{
 //        double rpta = (this.jornal * this.dias);
 //        System.out.println("El sueldo es: " + rpta);
 //    }
+    @Override
+    public void verDatos() {
+        System.out.println("Salario: "+this.jornal+"| Tipo documento: " + this.tipodocumento+"| Nro documento: "+this.nrodocumento+
+                "| Nombre: "+this.nombre+ "| Apellido paterno: "+this.apellidop+ "| Apellido materno: "+this.apellidom);
+    }
     
     public void calcularSueldo(int dias){
         double rpta = (this.jornal * dias);

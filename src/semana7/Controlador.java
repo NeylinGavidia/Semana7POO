@@ -24,19 +24,22 @@ public class Controlador {
       else {
         for (int i = 0; i < lista.size(); i++) 
         {
-            System.out.println("El listado de personas es: ");
-            System.out.println(lista.get(i));
             System.out.println("******************************");
+            System.out.println("El listado de personas es: ");
+           lista.get(i).verDatos();
+
             //tambien puede ser lista.get(i).verDatos();
             if(lista.get(i) instanceof Obrero){
               Obrero x = (Obrero)lista.get(i);
               x.calcularSueldo(5);
             }
+            
             else if (lista.get(i) instanceof Empleado){
             Empleado z = (Empleado)lista.get(i);
             z.calcularSueldo(14.2);
               }
             }
+           
         }
       }
 }
