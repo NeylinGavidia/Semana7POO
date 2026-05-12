@@ -29,5 +29,6 @@ public class Semana7 {
         
         
         ctrl.listarPersona();
+        
     }
 }
