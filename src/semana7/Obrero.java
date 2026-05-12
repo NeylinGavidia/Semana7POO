@@ -11,10 +11,12 @@ package semana7;
 public class Obrero extends Persona{
     
     private double jornal;
+//    private int dias;
 
-    public Obrero(double jornal, String tipodocumento, String nrodocumento, String nombre, String apellidop, String apellidom) {
+    public Obrero(double jornal, /*int dias,*/ String tipodocumento, String nrodocumento, String nombre, String apellidop, String apellidom) {
         super(tipodocumento, nrodocumento, nombre, apellidop, apellidom);
         this.jornal = jornal;
+//        this.dias = dias;
     }
 
     public double getJornal() {
@@ -24,4 +26,21 @@ public class Obrero extends Persona{
     public void setJornal(double jornal) {
         this.jornal = jornal;
     }
+//    public int getDias() {
+//        return dias;
+//    }
+//
+//    public void setDias(int dias) {
+//        this.dias = dias;
+//    }
+    
+//    public void calcularSueldo(){
+//        double rpta = (this.jornal * this.dias);
+//        System.out.println("El sueldo es: " + rpta);
+//    }
+    
+    public void calcularSueldo(int dias){
+        double rpta = (this.jornal * dias);
+        System.out.println("El sueldo es: " + rpta);
+     } 
 }

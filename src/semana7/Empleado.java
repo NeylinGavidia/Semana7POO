@@ -34,5 +34,8 @@ public class Empleado extends Persona {
                 "| Nombre: "+this.nombre+ "| Apellido paterno: "+this.apellidop+ "| Apellido materno: "+this.apellidom);
     }
     
-    
+    public void calcularSueldo(float descuento){
+        double rpta = this.salario-descuento;
+        System.out.println("El sueldo es: " + rpta);
+    }
 }
