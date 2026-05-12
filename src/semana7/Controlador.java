@@ -39,7 +39,6 @@ public class Controlador {
             z.calcularSueldo(14.2);
               }
             }
-           
         }
       }
 }
