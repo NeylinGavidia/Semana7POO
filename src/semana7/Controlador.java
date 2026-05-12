@@ -24,8 +24,10 @@ public class Controlador {
       else {
         for (int i = 0; i < lista.size(); i++) 
         {
+            System.out.println("El listado de personas es: ");
             System.out.println(lista.get(i));
             System.out.println("******************************");
+            //tambien puede ser lista.get(i).verDatos();
         }
       }
      }

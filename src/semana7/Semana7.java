@@ -21,5 +21,11 @@ public class Semana7 {
         //se puede agregar e1.setApellidom para quitar los parametros predeterminados que esta en la linea de arriba
         e1.verDatos();
         o1.verDatos();
+        
+        Controlador ctrl = new Controlador();
+        
+        ctrl.agregarPersona(e1);
+        ctrl.agregarPersona(o1);
+        ctrl.listarPersona();
     }
 }
